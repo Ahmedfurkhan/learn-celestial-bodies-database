@@ -1,0 +1,18 @@
+cls
+clear
+psql --username=freecodecamp --dbname=postgres
+cls
+clear
+psql --username=freecodecamp --dbname=postgres
+psql -U postgres -d universe
+psql --username=freecodecamp --dbname=postgres
+clear
+psql --username=freecodecamp --dbname=universe
+clear
+psql --username=freecodecamp --dbname=universe
+psql --username=freecodecamp --dbname=universe
+psql --username=freecodecamp --dbname=universe
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+psql -U postgres < universe.sql
+clear
+git add .
